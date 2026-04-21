@@ -1,21 +1,18 @@
-import { Sparkles, Loader2 } from 'lucide-react'
+import { Sparkles } from 'lucide-react'
 import type { QuizQuestion } from '@/types'
+import { quizIconMap } from '@/lib/utils/quiz-icons'
 
 interface InfoSlideProps {
   question: QuizQuestion
 }
 
 export default function InfoSlide({ question }: InfoSlideProps) {
-  const Icon = question.icon === 'loader' ? Loader2 : Sparkles
-  const isLoading = question.icon === 'loader'
+  const Icon = (question.icon && quizIconMap[question.icon]) || Sparkles
 
   return (
     <div className="text-center py-8">
       <div className="mb-6">
-        <Icon
-          size={56}
-          className={`text-brand-yellow mx-auto ${isLoading ? 'animate-spin' : ''}`}
-        />
+        <Icon size={56} className="text-brand-yellow mx-auto" />
       </div>
       <h2 className="text-2xl font-bold text-brand-black mb-3">
         {question.title}

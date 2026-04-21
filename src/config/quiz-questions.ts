@@ -17,7 +17,7 @@ export const quizQuestions: QuizQuestion[] = [
   {
     id: 'block_1',
     type: 'block_header',
-    blockEmoji: '🧠',
+    icon: 'brain',
     blockTitle: 'Nivel Real de Habilidade',
     subtitle: 'Sem maquiagem — queremos entender de verdade onde voce esta.',
   },
@@ -34,7 +34,7 @@ export const quizQuestions: QuizQuestion[] = [
     question: 'Quando voce precisa aprender algo novo no trabalho, voce normalmente:',
     options: [
       { value: 'self_taught', label: 'Aprende sozinho testando', icon: 'flask-conical' },
-      { value: 'tutorial', label: 'Procura tutorial', icon: 'youtube' },
+      { value: 'tutorial', label: 'Procura tutorial', icon: 'play-circle' },
       { value: 'asks_help', label: 'Pede ajuda', icon: 'hand-helping' },
       { value: 'avoids', label: 'Evita fazer', icon: 'circle-x' },
     ],
@@ -67,7 +67,7 @@ export const quizQuestions: QuizQuestion[] = [
   {
     id: 'block_2',
     type: 'block_header',
-    blockEmoji: '😬',
+    icon: 'heart-crack',
     blockTitle: 'Dores que Normalmente Nao Sao Ditas',
     subtitle: 'Aqui e so entre nos. Suas respostas sao confidenciais.',
   },
@@ -119,7 +119,7 @@ export const quizQuestions: QuizQuestion[] = [
   {
     id: 'block_3',
     type: 'block_header',
-    blockEmoji: '🚧',
+    icon: 'construction',
     blockTitle: 'Travas e Medos Reais',
     subtitle: 'Entender o que te trava e o primeiro passo para destravar.',
   },
@@ -155,7 +155,7 @@ export const quizQuestions: QuizQuestion[] = [
   {
     id: 'block_4',
     type: 'block_header',
-    blockEmoji: '💼',
+    icon: 'briefcase',
     blockTitle: 'Contexto Profissional',
     subtitle: 'Para entender melhor a sua realidade no dia a dia.',
   },
@@ -203,7 +203,7 @@ export const quizQuestions: QuizQuestion[] = [
   {
     id: 'block_5',
     type: 'block_header',
-    blockEmoji: '⚙️',
+    icon: 'settings',
     blockTitle: 'Uso Pratico',
     subtitle: 'Aqui e onde seus prompts personalizados comecam a tomar forma.',
   },
@@ -247,7 +247,7 @@ export const quizQuestions: QuizQuestion[] = [
   {
     id: 'block_6',
     type: 'block_header',
-    blockEmoji: '🧩',
+    icon: 'puzzle',
     blockTitle: 'Extracao Profunda',
     subtitle: 'Suas respostas aqui sao ouro — quanto mais detalhe, melhor o resultado.',
   },
@@ -273,13 +273,13 @@ export const quizQuestions: QuizQuestion[] = [
     placeholder: 'Aqui nao tem julgamento. Pode ser sincero.',
   },
 
-  // Slide Final - Completion
+  // Slide Final - Confirmation
   {
     id: 'completion',
     type: 'info',
-    title: 'Preparando seus resultados...',
+    title: 'Tudo certo com suas respostas?',
     subtitle:
-      'A IA esta analisando seu perfil e criando prompts personalizados para voce.',
-    icon: 'loader',
+      'Se quiser revisar ou ajustar algo, use "Voltar". Quando estiver pronto, clique em "Gerar prompts" para a IA analisar seu perfil.',
+    icon: 'clipboard-check',
   },
 ]

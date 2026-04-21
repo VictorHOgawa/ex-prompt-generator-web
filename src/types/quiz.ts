@@ -22,7 +22,6 @@ export interface QuizQuestion {
   icon?: string
   showIf?: (answers: QuizResponses) => boolean
   blockTitle?: string
-  blockEmoji?: string
 }
 
 export type QuizAnswer = string | string[] | boolean | null
